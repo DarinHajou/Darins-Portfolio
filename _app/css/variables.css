@@ -1,0 +1,11 @@
+:root {
+
+    /* colors */
+    --color-background: #FFFFF0;
+    --color-foreground: #DC143C;
+    --color-highlight: #4169E1;
+}
+
+button:focus, input:focus, select:focus {
+    outline: 2px solid var(--color-highlight);
+}
