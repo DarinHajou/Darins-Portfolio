@@ -1,36 +1,58 @@
+/* Core Grid Setup */
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
-    gap: 20px; /* Spacing between columns */
+    grid-template-columns: repeat(12, 1fr); /* Creates a 12-column grid */
+    gap: 20px; /* Space between columns */
     margin: 0 auto; /* Centers the grid */
-    max-width: 1100px; /* Maximum width of the content area */
-    padding: 0 80px; /* Creates a 160px total margin (80px on each side) */
+    max-width: 1100px; /* Maximum width of the grid */
+    padding: 0 80px; /* Padding for margins on both sides */
 }
 
-/* Media query for screens larger than the content area plus margins */
-@media (min-width: 1280px) {
-    .grid {
-        padding: 0 80px; /* Maintains the 160px total margin on larger screens */
-    }
+/* Column Span Classes for Larger Screens */
+.grid__col--1 { grid-column: span 1; }
+.grid__col--2 { grid-column: span 2; }
+.grid__col--3 { grid-column: span 3; }
+.grid__col--4 { grid-column: span 4; }
+.grid__col--5 { grid-column: span 5; }
+.grid__col--6 { grid-column: span 6; }
+.grid__col--7 { grid-column: span 7; }
+.grid__col--8 { grid-column: span 8; }
+.grid__col--9 { grid-column: span 9; }
+.grid__col--10 { grid-column: span 10; }
+.grid__col--11 { grid-column: span 11; }
+.grid__col--12 { grid-column: span 12; }
+
+.grid__col-start-5-span-8 {
+    grid-column-start: 5;
+    grid-column-end: span 8;
 }
 
-/* Media query for screens smaller than 1024px */
+
+/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 1024px) {
     .grid {
-        padding: 0 20px; /* Adjusts the side padding for smaller screens */
+        padding: 0 20px; /* Adjusts padding for smaller screens */
     }
 
-    /* All columns will stack on top of each other on smaller screens */
-    .grid__column--1, .grid__column--2, .grid__column--3, .grid__column--4,
-    .grid__column--5, .grid__column--6, .grid__column--7, .grid__column--8,
-    .grid__column--9, .grid__column--10, .grid__column--11, .grid__column--12 {
-        grid-column: 1 / -1; /* Spans full width of the grid */
+    /* Make all columns stack vertically on smaller screens */
+    .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4,
+    .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8,
+    .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
+        grid-column: 1 / -1; /* Each item spans full width */
     }
+
+    /* Mobile-specific column span classes (if needed) */
+    .grid__col-mobile--1 { grid-column: span 1; }
+    .grid__col-mobile--2 { grid-column: span 2; }
+    .grid__col-mobile--3 { grid-column: span 3; }
+    .grid__col-mobile--4 { grid-column: span 4; }
+    .grid__col-mobile--5 { grid-column: span 5; }
+    .grid__col-mobile--6 { grid-column: span 6; }
+    .grid__col-mobile--7 { grid-column: span 7; }
+    .grid__col-mobile--8 { grid-column: span 8; }
+    .grid__col-mobile--9 { grid-column: span 9; }
+    .grid__col-mobile--10 { grid-column: span 10; }
+    .grid__col-mobile--11 { grid-column: span 11; }
+    .grid__col-mobile--12 { grid-column: span 12; }
+    /* ... continue this pattern up to .grid__col-mobile--12 if needed */
 }
-
-/* Mobile-specific column spans */
-.grid__column-mobile--1 { grid-column: span 1; }
-.grid__column-mobile--2 { grid-column: span 2; }
-.grid__column-mobile--3 { grid-column: span 3; }
-.grid__column-mobile--4 { grid-column: span 4; }
-.grid__column-mobile--5 { grid-column: span 5; }
