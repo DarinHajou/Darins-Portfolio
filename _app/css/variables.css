@@ -2,8 +2,7 @@
 
     /* colors */
     --color-background: #FFFFF0;
-    --color-foreground: #DC143C;
-    --color-highlight: #4169E1;
+    --color-highlight: #DC143C;
 }
 
 button:focus, input:focus, select:focus {
