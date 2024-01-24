@@ -1,0 +1,53 @@
+.header {
+	font-family: var(--font-secondary-family);
+    font-weight: bold;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+.header__logo {
+    font-size: 1.3vw;
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav__link {
+    color: black;
+}
+
+.logo-highlight {
+    color: var(--color-highlight); 
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #fff; /* Or your preferred background color */
+    color: #000; /* Or your preferred text color */
+    padding: 8px;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+.skip-link:focus {  
+    top: 0;
+}
+
+.blog-highlight {
+    color: var(--color-highlight);
+}
+
+@media (max-width: 1024px) {
+    .header__logo {
+        font-size: 14px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+}
