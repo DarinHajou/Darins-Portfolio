@@ -1,3 +1,10 @@
 .header {
 	font-family: var(--font-secondary-family);
 }
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
