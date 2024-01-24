@@ -23,3 +23,17 @@
 .logo-highlight {
     color: var(--color-highlight); 
 }
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #fff; /* Or your preferred background color */
+    color: #000; /* Or your preferred text color */
+    padding: 8px;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+.skip-link:focus {  
+    top: 0;
+}
