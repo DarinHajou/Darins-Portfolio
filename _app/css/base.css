@@ -1,6 +1,4 @@
 body {
     background: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-main-regular);
     font-size: 1.5vw;
 }
