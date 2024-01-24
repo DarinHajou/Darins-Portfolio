@@ -37,3 +37,13 @@
 .skip-link:focus {  
     top: 0;
 }
+
+@media (max-width: 1024px) {
+    .header__logo {
+        font-size: 14px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+}
