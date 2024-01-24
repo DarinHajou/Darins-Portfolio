@@ -38,6 +38,10 @@
     top: 0;
 }
 
+.blog-highlight {
+    color: var(--color-highlight);
+}
+
 @media (max-width: 1024px) {
     .header__logo {
         font-size: 14px;
