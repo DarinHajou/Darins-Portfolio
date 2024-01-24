@@ -5,6 +5,6 @@
     --color-highlight: #DC143C;
 }
 
-button:focus, input:focus, select:focus {
+:focus {
     outline: 2px solid var(--color-highlight);
 }
