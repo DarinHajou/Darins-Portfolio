@@ -5,15 +5,7 @@
 
 :root {
     --font-main-family: 'Merriweather', serif;
-    --font-main-regular: 'Merriweather', serif;
-    --font-main-bold: 'Merriweather', serif;
-    
     --font-secondary-family: 'Roboto', sans-serif;
-    --font-secondary-regular: 'Roboto', sans-serif;
-    --font-secondary-italic: 'Roboto', sans-serif;
-    --font-secondary-medium: 'Roboto', sans-serif;
-    --font-secondary-medium-italic: 'Roboto', sans-serif;
-    --font-secondary-bold: 'Roboto', sans-serif;
 }
 
 
