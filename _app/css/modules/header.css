@@ -16,6 +16,10 @@
     font-family: "Orbitron", sans-serif;
 }
 
+.nav__link {
+    color: black;
+}
+
 .logo-highlight {
     color: var(--color-highlight); 
 }
