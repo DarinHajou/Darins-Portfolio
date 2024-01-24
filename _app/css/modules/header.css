@@ -1,11 +1,14 @@
 .header {
 	font-family: var(--font-secondary-family);
+    font-weight: bold;
 }
 
 .nav__list {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    font-size: 1em;
+    list-style: none;
 }
 
 .header__logo {
