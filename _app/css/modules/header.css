@@ -3,7 +3,7 @@
     font-weight: bold;
 }
 
-.nav__list {
+.header__nav .nav__list {
     display: flex;
     justify-content: space-between;
     padding: 10px;
