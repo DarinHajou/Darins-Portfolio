@@ -4,7 +4,7 @@
 }
 
 .header__nav .nav__list {
-    display: flex;
+    display: flex; /* Displays the nav by default */
     justify-content: space-between;
     padding: 10px;
     font-size: 0.8em;
