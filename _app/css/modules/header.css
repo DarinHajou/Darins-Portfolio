@@ -42,6 +42,10 @@
     color: var(--color-highlight);
 }
 
+.header__menu-button {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .header__logo {
         font-size: 14px;
@@ -55,6 +59,10 @@
 @media (max-width: 768px) {
     .header__nav {
         display: none; /* The nav is hidden by default in smaller screens */
+    }
+
+    .header__menu-button {
+        display: block;
     }
 }
 
