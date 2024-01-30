@@ -65,14 +65,15 @@
         position: absolute;
         display: none; /* The nav is hidden by default in smaller screens */
     }
-
+    
     .header__menu-button {
         display: block; /* The hamburger menu is visible by default in larger screens */
     }
-
+    
     .header__nav--active, .nav__list { 
         display: flex; /* Styles for mobile navigation is activated via JS on screens 768px or smaller. */
         flex-direction: column;
+        align-items: center;
        
     }
 
