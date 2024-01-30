@@ -1,9 +1,10 @@
 .header {
+    position: relative;
 	font-family: var(--font-secondary-family);
     font-weight: bold;
 }
 
-.header__nav .nav__list {
+.header__nav, .nav__list {
     display: flex; /* Displays the nav by default */
     justify-content: space-between;
     padding: 10px;
@@ -65,9 +66,10 @@
         display: block; /* The hamburger menu is visible by default in larger screens */
     }
 
-    .header__nav--active { 
+    .header__nav--active, .nav__list { 
         display: flex; /* Styles for mobile navigation is activated via JS on screens 768px or smaller. */
         flex-direction: column;
+       
     }
 }
 
