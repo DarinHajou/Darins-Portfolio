@@ -5,7 +5,8 @@ export default function toggleMenuVisibility () {
 
     // Toggles the active class on menu button click
     menuButton.addEventListener("click", function() {
-        nav.classList.toggle("header__nav--active"); 
+        nav.classList.toggle("header__nav--active");
+        menuButton.style.display = 'none';
     });
     
     // Listens to for window resize events
