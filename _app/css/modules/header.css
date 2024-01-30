@@ -80,9 +80,14 @@
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 15;
     }
+
+    .header__logo {
+        font-size: 12px;
+    }
     
     .header__menu-button {
         display: block; /* The hamburger menu is visible by default in larger screens */
+        font-size: 12px;
     }
 
     .nav__close-button {
@@ -95,7 +100,6 @@
         color: white; /* Or any other color that matches your design */
         font-size: 1.5em;
     }
-    
     
     .header__nav--active, .nav__list { 
         display: flex; /* Styles for mobile navigation is activated via JS on screens 768px or smaller. */
