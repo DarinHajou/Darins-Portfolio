@@ -62,6 +62,7 @@
 
 @media (max-width: 768px) {
     .header__nav {
+        position: absolute;
         display: none; /* The nav is hidden by default in smaller screens */
     }
 
@@ -73,6 +74,10 @@
         display: flex; /* Styles for mobile navigation is activated via JS on screens 768px or smaller. */
         flex-direction: column;
        
+    }
+
+    .header__nav--active, .nav__item {
+        padding: 20px;
     }
 }
 
