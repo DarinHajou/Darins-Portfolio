@@ -103,5 +103,9 @@
     .header__nav--active, .nav__item {
         padding: 20px;
     }
+    
+    .nav__link {
+        color: #fff;
+    }
 }
 
