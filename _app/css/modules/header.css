@@ -4,12 +4,15 @@
     font-weight: bold;
 }
 
-.header__nav, .nav__list {
-    display: flex; /* Displays the nav by default */
+.nav__list {
+    display: flex;
     justify-content: space-between;
+    list-style: none;
+}
+
+.header__nav {
     padding: 10px;
     font-size: 0.8em;
-    list-style: none;
 }
 
 .header__logo {
