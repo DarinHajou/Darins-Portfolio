@@ -7,7 +7,6 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* Creates a 12-column grid */
-    gap: 20px; /* Space between columns */
     margin: 0 auto; /* Centers the grid */
     max-width: 1100px; /* Maximum width of the grid */
 }
