@@ -1,3 +1,10 @@
+/**
+ * Toggles the visibility of the navigation menu. When the menu button is clicked, 
+ * it adds or removes the 'header__nav--active' class to the navigation menu, 
+ * which controls its visibility. Additionally, this function handles the closing 
+ * of the menu via the close button and adjusts visibility based on window size.
+ */
+
 export default function toggleMenuVisibility () {
     const menuButton = document.querySelector(".header__menu-button");
     const nav = document.querySelector(".header__nav");
