@@ -7,7 +7,6 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* Creates a 12-column grid */
-    gap: 20px; /* Space between columns */
     margin: 0 auto; /* Centers the grid */
     max-width: 1100px; /* Maximum width of the grid */
 }
@@ -26,15 +25,19 @@
 .grid__col--11 { grid-column: span 11; }
 .grid__col--12 { grid-column: span 12; }
 
-.grid__col-start-5-span-8 {
+.grid__col-start-5-span-7 {
     grid-column-start: 5;
-    grid-column-end: span 8;
+    grid-column-end: span 7;
 }
 
 .grid__col-start-1-span-1 {
     grid-column-start: 1;
 }
 
+.grid__col-start-12-span-1 {
+    grid-column-start: 12;
+    grid-column-end: span 1;
+}
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 1024px) {

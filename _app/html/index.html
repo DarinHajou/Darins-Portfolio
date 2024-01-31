@@ -7,7 +7,8 @@
         <title>Darin's Portfolio</title>
 
         <link rel="stylesheet" href="/_app/css/main.css">
-        <script type="module" src="/_app/js/main.js/"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <script type="module" src="/_app/js/main.js"></script>
     </head>
 
     <body>
@@ -16,7 +17,10 @@
 			<div class="grid">
 				<header class="header grid__col--12 grid">
 					<div class="header__logo">Darin's <span class="logo-highlight">Web</span>Lab</div>
-					<nav class="header__nav grid__col-start-5-span-8" role="navigation" aria-label="Main navigation">
+					<nav class="header__nav grid__col-start-5-span-7" role="navigation" aria-label="Main navigation">
+						<button class="nav__close-button">
+							<i class="fas fa-times"></i> <!-- Font Awesome close icon -->
+						</button>
 						<ul class="nav__list">
 							<li class="nav__item">
 								<a class="nav__link" href="#" aria-label="Navigate to about me page">About Me</a>
@@ -32,9 +36,13 @@
 							</li>
 						</ul>
 					</nav>
+					<button class="header__menu-button grid__col-start-12-span-1" aria-label="open navigation menu">
+						<i class="fas fa-bars"></i>
+					</button>
 				</header>
 			</div>
 		</div>
+      <hr class="header-hr">
 
 		<main id="main-content">
 
