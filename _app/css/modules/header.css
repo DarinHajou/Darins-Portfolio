@@ -48,7 +48,7 @@
     background: #fff;
     color: #000;
     padding: 8px;
-    z-index: 100; /* Ensures it's above other content */
+    z-index: 100;
 }
 
 .skip-link:focus {  
@@ -86,7 +86,7 @@
 @media (max-width: 768px) {
     .header__nav {
         position: fixed;
-        display: none; /* The nav is hidden by default in smaller screens */
+        display: none; /* Hide the nav in smaller screens */
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -105,7 +105,7 @@
     }
     
     .header__menu-button {
-        display: block; /* The hamburger menu is visible by default in larger screens */
+        display: block; /* The hamburger menu is visible smaller screens */
         font-size: 12px;
         margin-top: 20px;
     }
@@ -117,12 +117,12 @@
         right: 20px;
         background: none;
         border: none;
-        color: white; /* Or any other color that matches your design */
+        color: white;
         font-size: 3em;
     }
     
     .header__nav--active, .nav__list { 
-        display: flex; /* Styles for mobile navigation is activated via JS on screens 768px or smaller. */
+        display: flex; /* Styles for mobile navigation is activated in JS on screens <= 768px. */
         flex-direction: column;
         align-items: center;
         margin-top: 0;
