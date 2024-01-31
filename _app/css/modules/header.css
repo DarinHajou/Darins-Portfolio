@@ -4,28 +4,39 @@
     font-weight: bold;
 }
 
+.header__logo {
+    font-size: 1.3vw;
+    font-family: "Orbitron", sans-serif;
+}
+
+.logo-highlight {
+    color: var(--color-highlight); 
+}
+
+.header__nav {
+    font-size: 0.8em;
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.header__nav {
-    padding: 10px;
-    font-size: 0.8em;
-}
-
-.header__logo {
-    font-size: 1.3vw;
-    font-family: "Orbitron", sans-serif;
-}
-
 .nav__link {
     color: black;
+    padding: 8px;
+    display: inline-block;
 }
 
-.logo-highlight {
-    color: var(--color-highlight); 
+.nav__link:hover {
+    color: #fff;
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+}
+
+.nav__link:hover .blog-highlight {
+    color: #fff;
 }
 
 .skip-link {
