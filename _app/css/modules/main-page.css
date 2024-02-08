@@ -1,0 +1,65 @@
+#main-content {
+    min-height: 200vh;
+}
+
+.main-title {
+    /* position: relative; */
+    display: block;
+    text-align: center;
+    top: 100%;
+    font-family: var(--font-secondary-family);
+    font-size: 3em;
+    margin-top: 5%; /* Initial margin from the top */
+    transition: transform 0.4s ease-out; /* Smooth transition */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.today-text {
+    display: block;
+    text-align: center;
+}
+
+.title-highlight {
+    color: var(--color-highlight);
+}
+
+#main-content img {
+    position: absolute;
+    max-width: 40%; /* Set the initial size of the image */
+    height: auto;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%); /* Center the image precisely */
+    transition: transform 0.2s ease-out; 
+}
+
+.banner-button {
+    position: absolute;
+    top: 110%; /* Vertically center the button within the container */
+    left: 50%; /* Horizontally center the button within the container */
+    transform: translate(-50%); /* Center the button precisely */
+    font-family: var(--font-secondary-family);
+    font-size: 16px;
+    background-color: var(--color-highlight); /* You can style the button as needed */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    outline: none;
+}
+
+.banner-button:hover {
+    background-color: #A3C1AD; /* Darker shade on hover/focus for feedback */
+    transform: translate(-50%, -2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Enhanced shadow on lift */
+  }
+
+  .banner-button:active {
+    background-color: #798b7f; /* Even darker on click */
+    transform: translate(-50%, -1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Reset shadow */
+  }
